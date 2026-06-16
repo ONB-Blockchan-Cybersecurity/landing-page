@@ -1,0 +1,22 @@
+:root {
+  --bg-principal: #0a0f1d;
+  --bg-secundario: #111827;
+  --crypto-neon: #00ffcc;
+  --cyber-neon: #0070f3;
+  --texto-blanco: #ffffff;
+  --texto-gris: #9ca3af;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg-principal);
+  color: var(--texto-blanco);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
