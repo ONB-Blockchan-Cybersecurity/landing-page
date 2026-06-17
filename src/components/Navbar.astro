@@ -5,8 +5,8 @@ import "../styles/navbar.css";
 <header>
   <div class="logo">ONA Blockchain Security Audit</div>
   <nav class="navbar">
-    <a href="/">Inicio</a>
-    <a href="/webinar">Webinars</a>
-    <a href="/about">Nosotros</a>
+    <a href={`${import.meta.env.BASE_URL}`}"/">Inicio</a>
+    <a href={`${import.meta.env.BASE_URL}webinar`}>Webinars</a>
+    <a href={`${import.meta.env.BASE_URL}about`}>Nosotros</a>
   </nav>
 </header>
