@@ -20,3 +20,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
+
+main {
+  margin-top: 90px;
+}

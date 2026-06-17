@@ -1,0 +1,23 @@
+---
+import "../styles/contact_form.css";
+import "../styles/global.css";
+---
+
+<section id="contact" class="contact">
+  <h2 class="section-title">¿Listo para asegurar tu proyecto?</h2>
+  <form
+    onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito! (Simulación)');"
+  >
+    <input type="text" placeholder="Nombre completo" required />
+    <input
+      type="email"
+      placeholder="Correo electrónico institucional"
+      required
+    />
+    <textarea
+      rows="5"
+      placeholder="Contanos sobre las necesidades de tu proyecto"
+      required></textarea>
+    <button type="submit">Contactar a un Consultor</button>
+  </form>
+</section>
