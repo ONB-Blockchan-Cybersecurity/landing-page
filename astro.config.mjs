@@ -1,6 +1,10 @@
 import { defineConfig } from "astro/config";
 
+const isGithub = process.env.GITHUB_ACTIONS;
+
 export default defineConfig({
-  site: "https://ONB-Blockchan-Cybersecurity.github.io",
-  base: process.env.GITHUB_ACTIONS ? "/landing-page" : "/",
+  site: isGithub
+    ? "https://ONB-Blockchan-Cybersecurity.github.io/landing-page"
+    : "http://localhost:4321",
+  base: "/",
 });
