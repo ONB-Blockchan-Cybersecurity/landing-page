@@ -6,5 +6,5 @@ export default defineConfig({
   site: isGithub
     ? "https://ONB-Blockchan-Cybersecurity.github.io/landing-page"
     : "http://localhost:4321",
-  base: "/",
+  base: isGithub ? "/landing-page/" : "/",
 });
