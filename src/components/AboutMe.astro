@@ -1,0 +1,71 @@
+---
+import "../styles/about.css";
+import "../styles/global.css";
+
+interface Props {
+  imageSrc?: string;
+  imageAlt?: string;
+}
+
+const {
+  imageSrc = "/images/about_me.webp",
+  imageAlt = "Fotografía profesional del Auditor de Seguridad Blockchain",
+} = Astro.props;
+---
+
+<section class="about-container">
+  <div class="about-card">
+    <div class="image-wrapper">
+      <img src={imageSrc} alt={imageAlt} class="profile-image" />
+      <div class="status-badge">
+        <span class="pulse-dot"></span> Disponible para Auditorías
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <span class="subtitle">🛡️ BLOCKCHAIN SECURITY & ONA</span>
+      <h2 class="title">Sobre Mí</h2>
+
+      <p class="description">
+        Especialista en seguridad descentralizada enfocado en proteger
+        ecosistemas Web3. Combino la auditoría rigurosa de <strong
+          >Smart Contracts</strong
+        > con el <strong>Análisis de Redes Organizacionales (ONA)</strong> para identificar
+        vulnerabilidades lógicas, fallas de diseño y riesgos estructurales en la gobernanza
+        antes del despliegue en mainnet.
+      </p>
+
+      <div class="tech-grid">
+        <div class="grid-item">
+          <span class="icon">🔬</span>
+          <div class="grid-text">
+            <h3>Auditoría de Código</h3>
+            <p>
+              Análisis estático y dinámico profundo para prevenir exploits
+              lógicos y reentrancy.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <span class="icon">🕸️</span>
+          <div class="grid-text">
+            <h3>Modelado ONA</h3>
+            <p>
+              Mapeo de relaciones y dependencias para neutralizar vectores de
+              centralización oculta.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tags-container">
+        <span class="tag">Solidity</span>
+        <span class="tag">Rust</span>
+        <span class="tag">Slither</span>
+        <span class="tag">Echidna</span>
+        <span class="tag">DeFi Security</span>
+      </div>
+    </div>
+  </div>
+</section>
