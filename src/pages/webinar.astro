@@ -3,6 +3,9 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 import Hero from "../components/common/Hero.astro";
 import Topics from "../components/webinar/Topics.astro";
+import Audience from "../components/webinar/Audience.astro";
+import NextWebinar from "../components/webinar/NextWebinar.astro";
+import PastWebinars from "../components/webinar/PastWebinars.astro";
 
 import "../styles/global.css";
 ---
@@ -14,7 +17,9 @@ import "../styles/global.css";
     </Fragment>
 
     <Fragment slot="description">
-      Aprende a identificar vulnerabilidades críticas en Smart Contracts, protocolos DeFi y aplicaciones Web3 de la mano de especialistas en auditoría y seguridad blockchain.
+      Aprende a identificar vulnerabilidades críticas en Smart Contracts,
+      protocolos DeFi y aplicaciones Web3 de la mano de especialistas en
+      auditoría y seguridad blockchain.
     </Fragment>
 
     <Fragment slot="actions">
@@ -22,5 +27,8 @@ import "../styles/global.css";
     </Fragment>
   </Hero>
 
+  <NextWebinar />
   <Topics />
+  <Audience />
+  <PastWebinars />
 </MainLayout>
