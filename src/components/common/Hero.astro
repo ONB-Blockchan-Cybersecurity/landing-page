@@ -4,11 +4,13 @@ import "../../styles/hero.css";
 
 <section id="inicio" class="hero">
   <h1>
-    Ciberseguridad avanzada y auditoría <span>Blockchain</span> para Web3
+    <slot name="title" />
   </h1>
   <p>
-    Combinamos inteligencia OSINT, análisis forense digital y servicios en la
-    nube para blindar tus plataformas financieras descentralizadas.
+    <slot name="description" />
   </p>
-  <a href="#contact" class="btn">Solicitar Auditoría</a>
+
+  <div>
+    <slot name="actions" />
+  </div>
 </section>

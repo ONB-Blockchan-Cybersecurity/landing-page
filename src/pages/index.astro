@@ -6,13 +6,23 @@ import Solutions from "../components/home/Solutions.astro";
 import ContactForm from "../components/home/ContactForm.astro";
 
 import "../styles/global.css";
-
 ---
 
 <MainLayout title="Inicio">
+  <Hero>
+    <Fragment slot="title">
+      Ciberseguridad avanzada y auditoría <span>Blockchain</span> para Web3
+    </Fragment>
 
-  <Hero />
+    <Fragment slot="description">
+      Combinamos inteligencia OSINT, análisis forense digital y servicios en la
+      nube para blindar tus plataformas financieras descentralizadas.
+    </Fragment>
+
+    <Fragment slot="actions">
+      <a href="#contact" class="btn">Solicitar Auditoría</a>
+    </Fragment>
+  </Hero>
   <Solutions />
   <ContactForm />
-
 </MainLayout>
