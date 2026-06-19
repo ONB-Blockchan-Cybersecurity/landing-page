@@ -54,3 +54,70 @@
   margin-bottom: 12px;
   color: #cfd5df;
 }
+
+@media (max-width: 768px) {
+  .next-webinar {
+    padding: 60px 5%;
+  }
+
+  .next-webinar-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p,
+  .info-list li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .next-webinar {
+    padding: 40px 4%;
+  }
+
+  .next-webinar-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .section-subtitle {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .card p,
+  .info-list li {
+    font-size: 12px;
+  }
+
+  .info-list li {
+    margin-bottom: 8px;
+  }
+}

@@ -49,3 +49,51 @@
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(157, 95, 195, 0.3);
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 70vh;
+    padding: 40px 15px;
+    margin-top: 40px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+
+  .hero p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 60vh;
+    padding: 30px 12px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .hero p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
