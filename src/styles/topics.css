@@ -57,3 +57,70 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media (max-width: 768px) {
+  .topics {
+    padding: 60px 5%;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .section-subtitle {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topics {
+    padding: 40px 4%;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .section-subtitle {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .card a {
+    margin-top: 10px;
+  }
+}
