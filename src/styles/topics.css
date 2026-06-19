@@ -1,0 +1,40 @@
+.topics {
+  padding: 100px 8%;
+  background-color: var(--bg-secundario);
+}
+
+.topics-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.topic {
+  background-color: var(--bg-principal);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.topic h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.topic h3 span {
+  background: linear-gradient(45deg, var(--crypto-neon), var(--cyber-neon));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.topic p {
+  color: var(--texto-gris);
+  font-size: 15px;
+}
