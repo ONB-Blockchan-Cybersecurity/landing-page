@@ -1,12 +1,34 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 
+import Hero from "../components/common/Hero.astro";
+import Topics from "../components/webinar/Topics.astro";
+import Audience from "../components/webinar/Audience.astro";
+import NextWebinar from "../components/webinar/NextWebinar.astro";
+import PastWebinars from "../components/webinar/PastWebinars.astro";
+
 import "../styles/global.css";
 ---
 
 <MainLayout title="Webinars">
-  <section>
-    <h1>Webinar</h1>
-    <p>Escríbenos.</p>
-  </section>
+  <Hero>
+    <Fragment slot="title">
+      Webinars Gratuitos de Ciberseguridad <span>Blockchain</span>
+    </Fragment>
+
+    <Fragment slot="description">
+      Aprende a identificar vulnerabilidades críticas en Smart Contracts,
+      protocolos DeFi y aplicaciones Web3 de la mano de especialistas en
+      auditoría y seguridad blockchain.
+    </Fragment>
+
+    <Fragment slot="actions">
+      <a href="#contact" class="btn">Reserva Mi Lugar</a>
+    </Fragment>
+  </Hero>
+
+  <NextWebinar />
+  <Topics />
+  <Audience />
+  <PastWebinars />
 </MainLayout>

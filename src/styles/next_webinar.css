@@ -1,0 +1,56 @@
+.next-webinar {
+  padding: 100px 8%;
+  background-color: var(--bg-secundario);
+}
+
+.next-webinar-title {
+  text-align: center;
+  font-size: 36px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: var(--texto-gris);
+  margin-bottom: 40px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--bg-principal);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: left;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card h3 span {
+  background: linear-gradient(45deg, var(--crypto-neon), var(--cyber-neon));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card p {
+  color: var(--texto-gris);
+  font-size: 15px;
+}
+
+.info-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.info-list li {
+  margin-bottom: 12px;
+  color: #cfd5df;
+}
