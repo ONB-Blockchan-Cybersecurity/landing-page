@@ -41,7 +41,7 @@
   height: 220px;
   object-fit: cover;
   border-radius: 12px;
-  border: 2px solid var(--crypto-neon);
+  border: 2px solid var(--cyber-neon);
   background-color: var(--bg-secundario);
   box-shadow: 0 8px 24px rgba(157, 95, 195, 0.15);
 }
@@ -52,8 +52,8 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--bg-principal);
-  border: 1px solid var(--crypto-neon);
-  color: var(--crypto-neon);
+  border: 1px solid var(--cyber-neon);
+  color: var(--cyber-neon);
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.75rem;
@@ -68,7 +68,7 @@
 .pulse-dot {
   width: 8px;
   height: 8px;
-  background-color: var(--crypto-neon);
+  background-color: var(--cyber-neon);
   border-radius: 50%;
   display: inline-block;
   animation: pulse 2s infinite;
@@ -94,7 +94,7 @@
 }
 
 .subtitle {
-  color: var(--crypto-neon);
+  color: var(--cyber-neon);
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.12rem;
