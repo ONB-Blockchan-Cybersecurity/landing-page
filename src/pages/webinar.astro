@@ -5,25 +5,14 @@ import Hero from "../components/common/Hero.astro";
 import Topics from "../components/webinar/Topics.astro";
 import Audience from "../components/webinar/Audience.astro";
 import PastWebinars from "../components/webinar/PastWebinars.astro";
+import MembershipHero from "../components/webinar/MembershipHero.astro";
 
 import "../styles/global.css";
 ---
 
 <MainLayout title="Webinars">
-  <Hero>
-    <Fragment slot="title">
-      ONB <span>Security Academy</span>
-    </Fragment>
 
-    <Fragment slot="description">
-      Accede a webinars, workshops, análisis de vulnerabilidades, auditorías de
-      Smart Contracts y contenido premium de ciberseguridad blockchain.
-    </Fragment>
-
-    <Fragment slot="actions">
-      <a href="#start-subscription" class="btn">Comenzar Membresía</a>
-    </Fragment>
-  </Hero>
+  <MembershipHero />
 
   <Topics />
   <Audience />
