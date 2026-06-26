@@ -1,10 +1,16 @@
 :root {
-  --bg-principal: #0a0f1d;
-  --bg-secundario: #111827;
-  --crypto-neon: #9d5fc3;
-  --cyber-neon: #3a388b;
-  --texto-blanco: #ffffff;
-  --texto-gris: #9ca3af;
+  --bg-principal: #051321;
+  --bg-secundario: #0B1E31;
+  --bg-radial: #10384E;
+  --cyber-neon: #39F7EA;
+  --crypto-neon: #4F82FF;
+  --accent-purple: #715EFF;
+  --accent-orange: #FF713A;
+  --texto-blanco: #F8FAFF;
+  --texto-gris: #A9B7CC;
+  --cyan-glow: rgba(57,247,234,.35);
+  --orange-glow: rgba(255,113,58,.25);
+
 }
 
 * {

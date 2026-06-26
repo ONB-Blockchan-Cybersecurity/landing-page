@@ -1,4 +1,5 @@
 .hero {
+  --hero-img: url("/images/hero-background.webp");
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -6,12 +7,26 @@
   align-items: center;
   text-align: center;
   padding: 0 20px;
-  background: radial-gradient(
-    circle at center,
-    #1e293b 0%,
-    var(--bg-principal) 70%
-  );
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0) 0%,
+      var(--bg-principal) 90%
+    ),
+    var(--hero-img);
   margin-top: 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero.membership {
+  --hero-img: url("/images/membership-background.webp");
+}
+
+.hero.inscription {
+  --hero-img: url("/images/inscription-background.webp");
 }
 
 .hero h1 {
