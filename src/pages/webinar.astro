@@ -1,45 +1,19 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 
-import Hero from "../components/common/Hero.astro";
 import Topics from "../components/webinar/Topics.astro";
 import Audience from "../components/webinar/Audience.astro";
 import PastWebinars from "../components/webinar/PastWebinars.astro";
 import MembershipHero from "../components/webinar/MembershipHero.astro";
+import InscriptionHero from "../components/webinar/InscriptionHero.astro";
 
 import "../styles/global.css";
 ---
 
 <MainLayout title="Webinars">
-
   <MembershipHero />
-
   <Topics />
   <Audience />
   <PastWebinars />
-
-  <Hero>
-    <Fragment slot="title"> Membresía Fundadora </Fragment>
-
-    <Fragment slot="description">
-      Sé uno de los primeros miembros de ONA Academy.
-    </Fragment>
-
-    <Fragment slot="membership-list">
-      <ul class="info-list">
-        <li>✔ Identificar vulnerabilidades comunes</li>
-        <li>✔ Cómo trabajan los auditores Web3</li>
-        <li>✔ Casos reales de hackeos millonarios</li>
-        <li>✔ Buenas prácticas para proyectos blockchain</li>
-      </ul>
-    </Fragment>
-
-    <Fragment slot="price"><span>USD 9/mes</span></Fragment>
-
-    <Fragment slot="actions">
-      <div id="start-subscription">
-        <a href="#" class="btn">Cupos Limitados</a>
-      </div>
-    </Fragment>
-  </Hero>
+  <InscriptionHero />
 </MainLayout>
