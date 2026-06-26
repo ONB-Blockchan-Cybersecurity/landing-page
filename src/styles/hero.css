@@ -1,5 +1,5 @@
 .hero {
-  --hero-img: url("/images/hero-background.jpeg");
+  --hero-img: url("/images/hero-background.webp");
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,11 +22,11 @@
 }
 
 .hero.membership {
-  --hero-img: url("/images/membership-background.jpeg");
+  --hero-img: url("/images/membership-background.webp");
 }
 
 .hero.inscription {
-  --hero-img: url("/images/inscription-background.jpeg");
+  --hero-img: url("/images/inscription-background.webp");
 }
 
 .hero h1 {
