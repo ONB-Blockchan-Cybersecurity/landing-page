@@ -1,71 +1,36 @@
-# Astro Starter Kit: Minimal
+# ONA Blockchain Security
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Landing y páginas informativas para ONA Blockchain Security, construidas con Astro.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Páginas
 
-## Estructura del proyecto
-
-Dentro del proyecto, encontrarás las siguientes carpetas y archivos:
-
-```text
-/
-├── astro.config.mjs
-├── package-lock.json
-├── package.json
-├── public
-│   ├── favicon.ico
-│   ├── favicon.svg
-│   └── images
-│       └── about_me.webp
-├── README.md
-├── src
-│   ├── components
-│   │   ├── about
-│   │   │   └── AboutMe.astro
-│   │   ├── common
-│   │   │   ├── Footer.astro
-│   │   │   ├── Hero.astro
-│   │   │   └── Navbar.astro
-│   │   ├── home
-│   │   │   ├── ContactForm.astro
-│   │   │   └── Solutions.astro
-│   │   └── webinar
-│   │       ├── Audience.astro
-│   │       ├── NextWebinar.astro
-│   │       ├── PastWebinars.astro
-│   │       └── Topics.astro
-│   ├── layouts
-│   │   └── MainLayout.astro
-│   ├── pages
-│   │   ├── about.astro
-│   │   ├── contact.astro
-│   │   ├── index.astro
-│   │   └── webinar.astro
-│   └── styles
-│       ├── about.css
-│       ├── contact_form.css
-│       ├── footer.css
-│       ├── global.css
-│       ├── hero.css
-│       ├── navbar.css
-│       ├── next_webinar.css
-│       ├── solutions.css
-│       └── topics.css
-└── tsconfig.json
-```
+- Inicio: propuesta de valor, soluciones y formulario de contacto.
+- Webinars: membresía, temario, audiencia y webinars anteriores.
+- Nosotros: perfil profesional y especialidades.
+- Login y registro: pantallas de acceso simuladas para ONA Academy.
 
 ## Comandos
 
-Todos los comandos se corren desde la raíz del proyecto, desde la terminal:
+```sh
+npm install
+npm run dev
+npm run build
+npm run preview
+```
 
-| Command                     | Action                                           |
-| :-------------------------- | :----------------------------------------------- |
-| `npm install`               | Installs dependencies                            |
-| `npm start` o `npm run dev` | Starts local dev server at `localhost:4321`      |
-| `npm run build`             | Build your production site to `./dist/`          |
-| `npm run preview`           | Preview your build locally, before deploying     |
-| `npm run astro ...`         | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help`   | Get help using the Astro CLI                     |
+## Estructura
+
+```text
+src/
+  components/  Componentes reutilizables por sección
+  layouts/     Layout base con navegación, footer y estilos globales
+  lib/         Utilidades compartidas
+  pages/       Rutas del sitio
+  styles/      Estilos por componente o sección
+public/
+  images/      Imágenes públicas usadas por las páginas
+```
+
+## Despliegue
+
+La configuración de Astro usa `/landing-page/` como `base` cuando corre en GitHub Actions, y `/` en desarrollo local.

@@ -1,6 +1,6 @@
 ---
 import "../../styles/about.css";
-import "../../styles/global.css";
+import { withBase } from "../../lib/paths";
 
 interface Props {
   imageSrc?: string;
@@ -8,7 +8,7 @@ interface Props {
 }
 
 const {
-  imageSrc = `${import.meta.env.BASE_URL}images/about_me.webp`,
+  imageSrc = withBase("images/about_me.webp"),
   imageAlt = "Fotografía profesional del Auditor de Seguridad Blockchain",
 } = Astro.props;
 ---

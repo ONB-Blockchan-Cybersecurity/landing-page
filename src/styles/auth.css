@@ -1,7 +1,7 @@
 .auth-container {
   max-width: 950px;
   margin: 3rem auto 5rem;
-  padding: 0 1.5rem;
+  padding: 1.5rem;
   color: var(--texto-blanco);
 }
 
@@ -54,6 +54,7 @@
 }
 
 .auth-title span {
+  margin-left: 0.35rem;
   background: linear-gradient(45deg, var(--crypto-neon), var(--cyber-neon));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
