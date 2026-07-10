@@ -1,14 +1,50 @@
 ---
 import "../../styles/navbar.css";
+import { withBase } from "../../lib/paths";
 ---
 
-<header>
-  <div class="logo">ONA Blockchain Security</div>
-  <nav class="navbar">
-    <a href={`${import.meta.env.BASE_URL}`}>Inicio</a>
-    <a href={`${import.meta.env.BASE_URL}webinar`}>Webinars</a>
-    <a href={`${import.meta.env.BASE_URL}about`}>Nosotros</a>
-    <a href={`${import.meta.env.BASE_URL}login`}>Login</a>
-    <a href={`${import.meta.env.BASE_URL}register`}>Registrarme</a>
+<header class="site-header">
+  <a class="logo" href={withBase()} aria-label="Ir al inicio">
+    ONA Blockchain Security
+  </a>
+
+  <button
+    class="menu-toggle"
+    type="button"
+    aria-label="Abrir menú"
+    aria-expanded="false"
+    aria-controls="primary-navigation"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="primary-navigation" class="navbar" aria-label="Navegación principal">
+    <a href={withBase()}>Inicio</a>
+    <a href={withBase("webinar")}>Webinars</a>
+    <a href={withBase("about")}>Nosotros</a>
+    <a href={withBase("login")}>Login</a>
+    <a href={withBase("register")}>Registrarme</a>
   </nav>
 </header>
+
+<script>
+  const header = document.querySelector(".site-header");
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelectorAll(".navbar a");
+
+  menuToggle?.addEventListener("click", () => {
+    const isOpen = header?.classList.toggle("is-open") ?? false;
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      header?.classList.remove("is-open");
+      menuToggle?.setAttribute("aria-expanded", "false");
+      menuToggle?.setAttribute("aria-label", "Abrir menú");
+    });
+  });
+</script>

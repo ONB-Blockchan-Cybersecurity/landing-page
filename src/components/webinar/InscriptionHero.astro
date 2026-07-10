@@ -1,8 +1,15 @@
 ---
 import "../../styles/hero.css";
+import { withBase } from "../../lib/paths";
+
+const backgroundImage = `url("${withBase("images/inscription-background.webp")}")`;
 ---
 
-<section id="inicio" class="hero inscription">
+<section
+  id="start-subscription"
+  class="hero inscription"
+  style={`--hero-img: ${backgroundImage}`}
+>
   <h1>Membresía Fundadora</h1>
   <p>Sé uno de los primeros miembros de ONA Academy.</p>
 
@@ -19,7 +26,7 @@ import "../../styles/hero.css";
     <span>USD 9/mes</span>
   </h1>
 
-  <div id="start-subscription">
+  <div>
     <a href="#" class="btn">Cupos Limitados</a>
   </div>
 </section>

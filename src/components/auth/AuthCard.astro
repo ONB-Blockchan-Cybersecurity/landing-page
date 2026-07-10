@@ -4,18 +4,23 @@ import "../../styles/auth.css";
 interface Props {
   subtitle: string;
   title: string;
+  titleHighlight?: string;
   description: string;
   features?: string[];
 }
 
-const { subtitle, title, description, features = [] } = Astro.props;
+const { subtitle, title, titleHighlight, description, features = [] } =
+  Astro.props;
 ---
 
 <section class="auth-container">
   <div class="auth-card">
     <div class="auth-info">
       <span class="auth-subtitle">{subtitle}</span>
-      <h1 class="auth-title" set:html={title} />
+      <h1 class="auth-title">
+        {title}
+        {titleHighlight && <span>{titleHighlight}</span>}
+      </h1>
       <p class="auth-description">{description}</p>
       {
         features.length > 0 && (

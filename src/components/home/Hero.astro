@@ -1,16 +1,18 @@
 ---
 import "../../styles/hero.css";
+import { withBase } from "../../lib/paths";
+
+const backgroundImage = `url("${withBase("images/hero-background.webp")}")`;
 ---
 
-<section id="inicio" class="hero">
+<section id="inicio" class="hero" style={`--hero-img: ${backgroundImage}`}>
   <h1>
-    Ciberseguridad avanzada y auditoría <span>Blockchain</span> para Web3
+    <slot name="title" />
   </h1>
   <p>
-    Combinamos inteligencia OSINT, análisis forense digital y servicios en la
-    nube para blindar tus plataformas financieras descentralizadas.
+    <slot name="description" />
   </p>
   <div>
-    <a href="#contact" class="btn">Solicitar Auditoría</a>
+    <slot name="actions" />
   </div>
 </section>

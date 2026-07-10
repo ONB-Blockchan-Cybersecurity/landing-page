@@ -1,8 +1,15 @@
 ---
 import "../../styles/hero.css";
+import { withBase } from "../../lib/paths";
+
+const backgroundImage = `url("${withBase("images/membership-background.webp")}")`;
 ---
 
-<section id="inicio" class="hero membership">
+<section
+  id="inicio"
+  class="hero membership"
+  style={`--hero-img: ${backgroundImage}`}
+>
   <h1>
     ONB <span>Security Academy</span>
   </h1>
